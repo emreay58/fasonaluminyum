@@ -1,0 +1,54 @@
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="text-light mb-4">Adres</h3>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>Ahmet Yesevi Mah. Mekke Caddesi No:7 /A Sultanbeyli-İST
+
+                    </p>
+                    <p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+90 216 498 86 00</p>
+                    <p class="mb-2"><i class="fa bi bi-phone text-primary me-3"></i>+90 533 683 30 58</p>
+                    <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>info@fasonalüminyumdograma.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-body me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-body me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">Hizmetler</h3>
+                    {% for services in services %}
+                    <a class="btn btn-link" href="{% url 'service_detail' services.slug %}">{{services.title|title}}</a>
+                    {% endfor %}
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h3 class="text-light mb-4">Hızlı Linkler</h3>
+                    <a class="btn btn-link" href="{% url 'index' %}">Ana Sayfa</a>
+                    <a class="btn btn-link" href="{% url 'about' %}">Hakkımızda</a>
+                    <a class="btn btn-link" href="{% url 'contact' %}">İletişim</a>
+                    <a class="btn btn-link" href="{% url 'services' %}">Hizmetler</a>
+                    <a class="btn btn-link" href="">Projeler</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h3 class="text-light mb-4">E-mail</h3>
+                    <p>Lütfen E-Mail adresinizi giriniz. Fason alüminyum doğrama sizinle irtibata geçecek.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="E-mail">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Gönder</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="https://www.ckwebtasarim.net">Ck Web Tasarım Hizmetleri</a> tarafından tasarlanmştır. Tüm Hakları Saklıdır.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->

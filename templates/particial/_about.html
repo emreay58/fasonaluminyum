@@ -1,0 +1,32 @@
+  {% load static %}
+  <!-- About Start -->
+   <div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="about-img">
+                    <img class="img-fluid" src="{% static 'img/service-1.jpg' %}" alt="">
+                    <img class="img-fluid" src="{% static 'img/service-2.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <h4 class="section-title">Hakkımızda</h4>
+                <h1 class="display-5 mb-4">Fason Alüminyum Doğrama İmalatı</h1>
+                <p>Şirketimiz kuruluşundan bu yana başarı ile sunduğu ve geliştirdiği hizmetler sayesinde yerel ve bölgesel düzeyde önemli başarılara adını yazdırmış ve ülke ekonomisine büyük katkılar sağlamıştır. Bu başarının ve gelişimin arkasında nitelikli insan kaynağımız, bilgi birikimimiz ve güvene dayalı iş ilişkilerimiz yer almaktadır. </p>
+                <p class="mb-4">İşbirliği içerisinde olduğumuz tüm kurum ve kuruluşlarla tesis etmiş olduğumuz karşılıklı güven, çalışma anlayışımızın en önemli değerini oluşturmaktadır. Güvene dayalı güçlü ilişkilerimizin bundan sonraki süreçte de tüm paydaşlarımız ile sürdürülmesi en önemli gayretimiz olacaktır</p>
+                <div class="d-flex align-items-center mb-5">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center border border-5 border-primary" style="width: 120px; height: 120px;">
+                        <h2 class="display-1 mb-n2" data-toggle="counter-up">25</h2>
+                    </div>
+                    <div class="ps-4">
+                        <h3>Yıllık</h3>
+                        <h3>Tecrübemizle</h3>
+                        <h3 class="mb-0">Yanınızdayız</h3>
+                    </div>
+                </div>
+                <a class="btn btn-primary py-3 px-5" href="{% url 'contact' %}">Bize Ulaşın</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->

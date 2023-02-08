@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Fason Alüminyum Doğrama İmalatı - 0533 683 30 58}{% endblock title %}
+{% block dc.title %}Fason Alüminyum Doğrama İmalatı- 0533 683 30 58{% endblock dc.title %}
+{% block og.title %}Fason Alüminyum Doğrama İmalatı- 0533 683 30 58{% endblock og.title %}
+{% block tw.title %}Fason Alüminyum Doğrama İmalatı- 0533 683 30 58{% endblock tw.title %}
+{% block item.title %}Fason Alüminyum Doğrama İmalatı- 0533 683 30 58{% endblock item.title %}
+
+{% block description %}Fason Alüminyum Doğrama İmalatı ve Cephe Sistemleri Kaliteli hizmet uygun fiyat garantisi.{% endblock description %}
+{% block dc.description %}Fason Alüminyum Doğrama İmalatı ve Cephe Sistemleri Kaliteli hizmet uygun fiyat garantisi.{% endblock dc.description %}
+{% block og.description %}Fason Alüminyum Doğrama İmalatı ve Cephe Sistemleri Kaliteli hizmet uygun fiyat garantisi.{% endblock og.description %}
+{% block tw.description %}Fason Alüminyum Doğrama İmalatı ve Cephe Sistemleri Kaliteli hizmet uygun fiyat garantisi.{% endblock tw.description %}
+{% block item.description %}Fason Alüminyum Doğrama İmalatı ve Cephe Sistemleri Kaliteli hizmet uygun fiyat garantisi.{% endblock item.description %}
+
+{% block content %}
+      <!-- Page Header Start -->
+      <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-1 text-white animated slideInDown">İletişim</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb text-uppercase mb-0">
+                    <li class="breadcrumb-item"><a class="text-white" href="{% url 'index' %}">Ana Sayfa</a></li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">İletişim</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+{% include 'particial/_contact.html' %}
+
+
+    <!-- Google Map Start -->
+    <div class="container-xxl pt-5 px-0 wow fadeIn" data-wow-delay="0.1s">
+        <iframe class="w-100 mb-n2" style="height: 450px;"  
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48200.004438457865!2d29.236173507250175!3d40.97052496680876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cad05f6c39e447%3A0xe61f1543c617d10c!2sAhmet%20Yesevi%2C%20Mekke%20Cd.%207%2FA%2C%2034930%20Sultanbeyli%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1668715748881!5m2!1str!2str"></iframe>
+    </div>
+    <!-- Google Map End -->
+{% endblock content %}
